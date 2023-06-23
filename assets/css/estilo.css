@@ -1,43 +1,78 @@
-/* Estilo padroes para todas as telas */
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap');
-
-body{
-    font-family: 'Source', sans-serif;
-    font-weight: 200;
-    font-size: 1rem;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
 .banner{
-
-    height: 50vh;
     background: url('../img/pa.webp');
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: top center;
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+.perfil{
+    border-radius: 50%;
+    border: #fff solid 0.5rem;
+    height: 60vh;
+}
+
+.myname {
+    font-family: 'dois', sans-serif;
+    font-size: 4rem;
     color: #fff;
-}
-/* Estilo para telas com resolução até 576px */
-@media (max-width: 575.98px) { 
-
- }
-
-/* Estilo para telas com resolução até 768px */
-@media (max-width: 767.98px) { 
-
- }
-
-/* Estilo para telas com resolução até 996px*/
-@media (max-width: 991.98px) { 
-
- }
-
-/* Estilo para telas com resolução ate 1080px*/
-@media (max-width: 1199.98px) { 
-
-
+    font-weight: 600;
 }
 
-/* X-Large devices (large desktops, less than 1400px)*/
-@media (max-width: 1399.98px) {
+
+@media (max-width: 576px) { 
+    .banner {
+        background-position: center;
+        height: 80vh;
+    }
+    .perfil{
+       height: 100%;
+
+    }
+    .myname {
+        font-family: 'dois', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1200px) { 
+    .banner {
+        background-position: right;
+        height: 80vh;
+    }
+    .perfil{
+       height: 100%;
+
+    }
+    
+}
+
+.habilidades{
+    font-family: 'Kalam', cursive;
+    color: #000000;
+    
+    text-decoration: underline;
+}
+
+.historico{
+    font-family: 'Kalam', cursive;
+    color: #111111;
+   margin-left: 35%;
+    text-decoration: underline;
+}
+
+
+.letra{
+    text-decoration: underline;
+}
+
+
+
+.histo{
+    margin-left: 35%;
+   
 
 }
+
